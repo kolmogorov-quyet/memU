@@ -1,6 +1,6 @@
 from memu.prompts.memory_type import behavior, event, knowledge, profile, skill
 
-DEFAULT_MEMORY_TYPES: list[str] = ["profile", "event", "knowledge", "behavior","skill"]
+DEFAULT_MEMORY_TYPES: list[str] = ["profile", "event", "knowledge", "behavior"]
 # DEFAULT_MEMORY_TYPES: list[str] = ["profile", "event"]
 
 PROMPTS: dict[str, str] = {
