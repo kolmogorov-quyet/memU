@@ -1,6 +1,6 @@
 [project]
 name = "memu-py"
-version = "1.2.0"
+version = "1.3.0"
 authors = [
     {name = "MemU Team", email = "contact@nevamind.ai"},
 ]
@@ -100,6 +100,10 @@ disallow_untyped_defs = false
 disallow_incomplete_defs = false
 warn_unused_ignores = false
 disable_error_code = ["attr-defined", "call-arg"]
+
+[[tool.mypy.overrides]]
+module = ["lazyllm.*"]
+ignore_missing_imports = true
 
 [[tool.mypy.overrides]]
 module = ["pgvector.*"]
